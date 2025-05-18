@@ -1,7 +1,12 @@
 import { dirname, join, resolve } from "path";
+import { fileURLToPath } from "url";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 function getAbsolutePath(value) {
-  return dirname(require.resolve(join(value, "package.json")));
+  return dirname(
+    fileURLToPath(import.meta.resolve(join(value, "package.json")))
+  );
 }
 
 const config = {
