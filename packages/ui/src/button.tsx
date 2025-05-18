@@ -8,7 +8,7 @@ export interface ButtonProps
 export function Button({ children, onClick, ...other }: ButtonProps): any {
   return (
     <button onClick={onClick} type="button" {...other}>
-      {children} hhfh
+      {children}
     </button>
   );
 }

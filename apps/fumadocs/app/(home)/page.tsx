@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { Button } from "@juspay/ui/button";
+import { Button } from "@fractaljstest/ui/button";
 
 export default function HomePage() {
   return (
