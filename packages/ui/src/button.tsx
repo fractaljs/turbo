@@ -5,10 +5,10 @@ export interface ButtonProps
   children: React.ReactNode;
 }
 
-export function Button({ children, onClick, ...other }: ButtonProps): JSX.Element {
+export function Button({ children, onClick, ...other }: ButtonProps): any {
   return (
     <button onClick={onClick} type="button" {...other}>
-      {children}
+      {children} hhfh
     </button>
   );
 }
